@@ -1,0 +1,70 @@
+:root {
+  --cellSize: 10px;
+  --aliveColor: orangered;
+  --deadColor: lightgrey;
+  --borderCellColor: black;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: whitesmoke;
+  box-shadow: 0 0 120px 3px #333 inset;
+  padding: 35px 0;
+}
+
+#titleSpan {
+  color:  var(--aliveColor);
+}
+
+#main-container {
+  text-align: center;
+}
+
+#gameGrid {
+  display: inline-block;
+  box-shadow: 0 0 5px #333;
+  border-style: solid;
+  border-color:  var(--borderCellColor);
+  border-radius: 1%;
+}
+
+.cell {
+  float: left;
+  width: var(--cellSize);
+  height:  var(--cellSize);
+  border: 1px solid;
+  border-color:  var(--borderCellColor);
+}
+
+.cell.alive {
+  background:  var(--aliveColor);
+}
+
+.cell.dead {
+  background:  var(--deadColor);
+}
+
+#top-controls {
+  margin-bottom: 20px;
+}
+
+#bottom-controls{
+  margin-top: 20px;
+}
+
+.controls-container.controls-span{
+    color:  var(--aliveColor);
+}
+.controls-container .btn{
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#footer {
+  margin-top: 20px;
+}
