@@ -11,7 +11,7 @@ class Grid extends Component {
     this.flattedGrid = _.flatten(this.gameGrid)
     this.generationCount = 0
     this.state = {
-      gameState: 'play'
+      gameState: 'pause'
     }
      // default speed:
     this.speed = this.props.fastSpeed
